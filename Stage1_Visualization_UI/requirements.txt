@@ -1,0 +1,4 @@
+streamlit>=1.32,<2
+plotly>=5.18,<7
+scipy>=1.10
+Pillow>=9
