@@ -2,7 +2,7 @@
 
 **Gaussian Reconstruction, Alignment, and Continuity Enhancement**
 
-GRACE-GS 是 MERCY 项目的单目静态三维高斯初始化模块，主要实现固定内参相机标定、RGB 引导的 Gaussian Refinement，以及高斯重建结果的可视化分析。
+GRACE-GS 是 MERCY 项目的单目静态三维高斯初始化与优化模块。该模块以 **Hunyuan3D 生成的初始三维高斯模型（G0）和对应的单张 RGB 图像**作为输入，通过固定内参虚拟相机标定、RGB 引导的 Gaussian Refinement 和表面连续性优化，对初始高斯模型进行几何与外观修正，并提供重建结果的可视化分析，最终生成优化后的高斯模型（G0*），为后续动态 4D Gaussian Reconstruction 提供高质量的静态初始化。
 
 ## 1. 项目结构
 
