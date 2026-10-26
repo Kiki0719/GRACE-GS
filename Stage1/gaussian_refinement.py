@@ -47,7 +47,7 @@ from gaussian_utils.feature_prior import (
     prepare_feature_prior,
 )
 
-DEFAULT_OUTPUT = "/E-D3DGS/Stage1/round1/refinement"
+DEFAULT_OUTPUT = str(Path(__file__).resolve().parent / "round1" / "refinement")
 
 from gaussian_utils.refinement_utils import (
     cfg_bool,

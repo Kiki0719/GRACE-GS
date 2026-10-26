@@ -22,7 +22,7 @@ with st.sidebar:
     # Automatically discover datasets from MonoEv/Stage1.
     preset_root = Path("/root/autodl-tmp/MonoEv/Stage1")
     data_root = Path("/root/autodl-tmp/Mono_Data")
-    config_root = Path("/E-D3DGS/Stage1")
+    config_root = Path(__file__).resolve().parent.parent / "Stage1"
 
     preset_names = sorted(
         [d.name for d in preset_root.iterdir() if d.is_dir()],
